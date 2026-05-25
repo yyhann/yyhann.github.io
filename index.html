@@ -3,38 +3,159 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yuhan Liu</title>
+  <title>Yuhan Liu | Personal Website</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header class="hero">
-    <h1>Yuhan Liu</h1>
-    <p>Ph.D. Candidate in Mechanical Engineering, Boston University</p>
-    <p>Metamaterial-enabled MRI | Biomedical Imaging | RF Engineering</p>
+  <header class="top-nav">
+    <div class="nav-inner">
+      <div class="site-title">
+        <a href="#">YUHAN<br>LIU</a>
+        <span>Ph.D. Candidate · Boston University</span>
+      </div>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#cv">CV</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>About</h2>
-      <p>
-        I am a Ph.D. student working at the intersection of biomedical imaging,
-        electromagnetic metamaterials, and research-driven engineering.
+  <main class="page">
+    <aside class="profile-card">
+      <img src="images/profile.jpg" alt="Yuhan Liu" class="profile-photo" />
+
+      <h1>Yuhan Liu</h1>
+      <p class="subtitle">Ph.D. Candidate @ Boston University</p>
+
+      <p class="keywords">
+        Metamaterial-enabled MRI · Biomedical Imaging · RF Engineering · Research Hardware
       </p>
-    </section>
 
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li>Metamaterial-enabled MRI</li>
-        <li>Wireless reconfigurable resonant structures</li>
-        <li>Haptic actuator and driver board platform</li>
-      </ul>
-    </section>
+      <div class="contact-list">
+        <p>📍 Boston, MA, USA</p>
+        <p>✉️ <a href="mailto:yuhanyh@bu.edu">yuhanyh@bu.edu</a></p>
+        <p>💻 <a href="https://github.com/yyhann" target="_blank">GitHub</a></p>
+        <p>🎓 <a href="https://scholar.google.com/citations?user=WMkMTb4AAAAJ" target="_blank">Google Scholar</a></p>
+      </div>
 
-    <section>
-      <h2>Contact</h2>
-      <p>Email: yuhanyh@bu.edu</p>
-      <p>GitHub: <a href="https://github.com/yyhann">github.com/yyhann</a></p>
+      <a class="cv-button" href="docs/Yuhan_Liu_CV.pdf" target="_blank">Download CV</a>
+    </aside>
+
+    <section class="content">
+      <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+          I am a Ph.D. student in Mechanical Engineering at Boston University, working at the intersection of biomedical imaging,
+          electromagnetic metamaterials, and research-driven engineering.
+        </p>
+        <p>
+          My current research focuses on <strong>metamaterial-enabled MRI</strong>, especially wireless and patient-adaptive
+          metamaterial interfaces for improving signal-to-noise ratio, spatial uniformity, and imaging flexibility in clinical MRI.
+        </p>
+      </section>
+
+      <section id="news" class="section">
+        <h2>🔥 News</h2>
+        <ul class="news-list">
+          <li><strong>2026</strong> Building a personal research portfolio website.</li>
+          <li><strong>2026</strong> Working on metamaterial-enabled MRI for breast imaging applications.</li>
+          <li><strong>2025</strong> Advanced Materials paper accepted on circularly polarized metamaterial cage for MRI SNR enhancement.</li>
+        </ul>
+      </section>
+
+      <section id="cv" class="section">
+        <h2>Curriculum Vitae</h2>
+        <p>You can download my latest CV below.</p>
+        <a class="inline-button" href="docs/Yuhan_Liu_CV.pdf" target="_blank">Download CV (PDF)</a>
+      </section>
+
+      <section id="education" class="section">
+        <h2>📘 Education</h2>
+
+        <div class="card">
+          <div>
+            <h3>Boston University</h3>
+            <p>Ph.D. in Mechanical Engineering</p>
+          </div>
+          <span>2024 – Present</span>
+        </div>
+
+        <div class="card">
+          <div>
+            <h3>Tsinghua University</h3>
+            <p>M.S. in Electronic Engineering</p>
+          </div>
+          <span>2020 – 2023</span>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>🧩 Selected Projects</h2>
+
+        <div class="project-grid">
+          <div class="project-card">
+            <h3>Metamaterial-Enabled MRI</h3>
+            <p>
+              Wireless and patient-adaptive metamaterial interfaces for improving MRI SNR, spatial uniformity,
+              and imaging flexibility.
+            </p>
+            <p class="tags">MRI · RF Engineering · Metamaterials · Biomedical Imaging</p>
+          </div>
+
+          <div class="project-card">
+            <h3>Wireless Reconfigurable Resonant Structures</h3>
+            <p>
+              Modular RF resonant structures designed for in-phase coupling and wireless enhancement in MRI systems.
+            </p>
+            <p class="tags">CST · RF Coils · Resonators · Simulation</p>
+          </div>
+
+          <div class="project-card">
+            <h3>Haptic Actuator Platform</h3>
+            <p>
+              Flexible haptic actuator systems with custom driver electronics for tactile feedback and perception studies.
+            </p>
+            <p class="tags">Haptics · Flexible Electronics · Driver Board · Hardware</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="publications" class="section">
+        <h2>📄 Selected Publications</h2>
+
+        <div class="publication">
+          <p>
+            <strong>Circularly Polarized Metamaterial Cage for Homogeneous Signal-to-Noise Ratio Enhancement in Magnetic Resonance Imaging.</strong>
+            <br />
+            <em>Advanced Materials</em>.
+          </p>
+        </div>
+
+        <div class="publication">
+          <p>
+            <strong>Wireless Reconfigurable Metasurface for Enhanced Magnetic Resonance Imaging.</strong>
+            <br />
+            Manuscript in preparation / under review.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>
+          Email: <a href="mailto:yuhanyh@bu.edu">yuhanyh@bu.edu</a>
+        </p>
+        <p>
+          GitHub: <a href="https://github.com/yyhann" target="_blank">github.com/yyhann</a>
+        </p>
+      </section>
     </section>
   </main>
 </body>
