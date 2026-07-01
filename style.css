@@ -337,12 +337,12 @@ nav a {
 
 .publication-item h3 {
   margin: 0 0 6px;
-  line-height: 1.25;
+  line-height: 1;
 }
 
 .publication-item p {
   margin: 0 0 6px;
-  line-height: 1.35;
+  line-height: 1;
 }
 
 /* Responsive */
