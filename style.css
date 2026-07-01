@@ -329,20 +329,27 @@ nav a {
 
 .publication-item {
   background: #ffffff;
+  border: 1px solid #e5e7eb;
   border-left: 4px solid #3366cc;
-  border-radius: 10px;
-  padding: 16px 18px;
-  margin-bottom: 14px;
+  border-radius: 14px;
+  padding: 18px 22px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.04);
 }
 
 .publication-item h3 {
   margin: 0 0 6px;
-  line-height: 1;
+  line-height: 1.25;
+  font-size: 20px;
+  color: #111;
 }
 
 .publication-item p {
-  margin: 0 0 6px;
-  line-height: 1;
+  margin: 0 0 5px;
+  line-height: 1.35;
+}
+
+.publication-links {
+  margin-top: 6px;
 }
 
 /* Responsive */
