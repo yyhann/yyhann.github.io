@@ -472,6 +472,19 @@ nav a {
   height: 500px;
 }
 
+.activity-card.portrait-feature {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+}
+
+.activity-card.portrait-feature img {
+  width: 100%;
+  height: 620px;
+  object-fit: cover;
+}
+
 .activity-caption {
   padding: 24px 28px 28px;
 }
@@ -527,4 +540,13 @@ nav a {
   .activity-card.wide img {
     height: 360px;
   }
+
+  .activity-card.portrait-feature {
+  grid-column: span 1;
+  grid-template-columns: 1fr;
+}
+
+.activity-card.portrait-feature img {
+  height: 520px;
+}
 }
