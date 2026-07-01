@@ -321,12 +321,28 @@ nav a {
 }
 
 /* Publications */
-.publication {
+.publication-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.publication-item {
   background: #ffffff;
   border-left: 4px solid #3366cc;
   border-radius: 10px;
   padding: 16px 18px;
   margin-bottom: 14px;
+}
+
+.publication-item h3 {
+  margin: 0 0 6px;
+  line-height: 1.25;
+}
+
+.publication-item p {
+  margin: 0 0 6px;
+  line-height: 1.35;
 }
 
 /* Responsive */
