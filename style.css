@@ -226,6 +226,19 @@ nav a {
   white-space: nowrap;
 }
 
+.education-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.education-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 .card h3 {
   margin: 0 0 4px;
   font-size: 18px;
@@ -318,6 +331,10 @@ nav a {
 
   .education-item {
   flex-direction: column;
+  align-items: flex-start;
+}
+
+  .education-left {
   align-items: flex-start;
 }
 }
