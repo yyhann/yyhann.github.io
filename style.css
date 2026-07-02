@@ -296,6 +296,21 @@ nav a {
   color: #111;
 }
 
+.project-card h3 a {
+  color: #111;
+  text-decoration: none;
+}
+
+.project-card h3 a:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.project-card p {
+  color: #444;
+  margin: 0 0 10px;
+}
+
 .project-card p {
   color: #444;
   margin: 0 0 10px;
