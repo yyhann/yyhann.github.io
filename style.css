@@ -396,6 +396,16 @@ nav a {
   text-decoration: underline;
 }
 
+.extension-card h4 a {
+  color: #111;
+  text-decoration: none;
+}
+
+.extension-card h4 a:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
 .featured-project-content > p:not(.mini-label):not(.project-links-line) {
   color: #4b5563;
   font-size: 15px;
