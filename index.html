@@ -245,11 +245,13 @@
           <h4>CST Automation for Parametric RF Design</h4>
       
           <p class="extension-summary">
-            Used CST scripting to automate the generation of complex resonator
-            geometries that could not be efficiently modified through conventional
-            parameterization, enabling systematic evaluation of different gap
-            configurations. Parametric sweeps were also used to study ring diameter,
-            spacing, and stacked-ring configurations during RF design optimization.
+            During my metamaterial-enabled MRI work, one resonator design stood out for 
+            how strongly it coupled to the RF receive field and generated localized H-field enhancement. 
+            But it came with a catch: the geometry was intricate and finely detailed, and didn't lend itself to 
+            conventional parametric modeling — which made it hard to systematically explore how its performance 
+            responded across the design space. I wrote CST scripts to construct these geometries programmatically, 
+            letting me sweep the design space and trace exactly how performance climbs to a peak, reaches its limit, and declines — cutting 
+            the time of simulation work for this project by roughly 50%.
           </p>
       
         </div>
@@ -263,10 +265,18 @@
           <h4>Automated MRI SNR Analysis Tool</h4>
       
           <p class="extension-summary">
-            Developed an interactive analysis tool for uploading DICOM images,
-            generating SNR maps, selecting user-defined comparison coordinates,
-            and producing quantitative 1D SNR profiles for efficient comparison
-            across RF hardware configurations.
+            Comparing validation MRI datasets is a major part of my MRI workflow. 
+            While MATLAB scripts provided reliable SNR calculations, 
+            selecting or adjusting analysis regions was not visually intuitive, 
+            and differences across image datasets often required manual changes to the script before rerunning the analysis. 
+            A visual and interactive interface could therefore significantly improve the workflow, 
+            especially when there is a need to quickly review and compare results across multiple scans.
+
+            I built an interactive web app to make this workflow more visual, flexible, and efficient. 
+            The tool allows users to upload two DICOM acquisition datasets, automatically identify the corresponding signal and noise images, 
+            visually adjust the noise region for each dataset, and generate side-by-side SNR maps with quantitative comparisons. 
+            The SNR calculation reproduces our established MATLAB workflow while eliminating repeated code adjustments and making 
+            it easier to inspect and compare results during MRI experiments.
           </p>
       
         </div>
