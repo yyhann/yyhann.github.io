@@ -610,40 +610,82 @@ nav a {
 }
 
 /* Compact SNR tool preview */
-.snr-preview-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 260px);
-  gap: 12px;
-  margin-top: 14px;
-  justify-content: start;
-}
+<div
+  class="snr-preview-grid"
+  style="
+    display: flex;
+    gap: 14px;
+    margin-top: 14px;
+    align-items: flex-start;
+  "
+>
 
-.snr-preview-item {
-  width: 260px;
-  min-width: 0;
-}
+  <div
+    class="snr-preview-item"
+    style="width: 260px; flex: 0 0 260px;"
+  >
 
-.snr-preview-image {
-  width: 20%;
-  height: 125px;
-  object-fit: cover;
-  object-position: top;
-  display: block;
+    <img
+      src="images/snr-tool-upload.png"
+      alt="MRI SNR analysis app DICOM dataset upload interface"
+      class="snr-preview-image"
+      style="
+        display: block;
+        width: 260px;
+        height: 130px;
+        object-fit: contain;
+        border: 1px solid #e5e7eb;
+        border-radius: 9px;
+      "
+    />
 
-  border: 1px solid #e5e7eb;
-  border-radius: 9px;
-  background: #ffffff;
-}
+    <span
+      style="
+        display: block;
+        margin-top: 5px;
+        font-size: 11px;
+        color: #777;
+      "
+    >
+      DICOM Dataset Input
+    </span>
 
-.snr-preview-item span {
-  display: block;
-  margin-top: 5px;
+  </div>
 
-  color: #777;
-  font-size: 11px;
-  line-height: 1.3;
-}
 
+  <div
+    class="snr-preview-item"
+    style="width: 260px; flex: 0 0 260px;"
+  >
+
+    <img
+      src="images/snr-tool-results.png"
+      alt="Side-by-side MRI SNR map comparison results"
+      class="snr-preview-image"
+      style="
+        display: block;
+        width: 260px;
+        height: 130px;
+        object-fit: contain;
+        border: 1px solid #e5e7eb;
+        border-radius: 9px;
+      "
+    />
+
+    <span
+      style="
+        display: block;
+        margin-top: 5px;
+        font-size: 11px;
+        color: #777;
+      "
+    >
+      Side-by-Side SNR Analysis
+    </span>
+
+  </div>
+
+</div>
 
 /* Temporary image placeholders */
 .image-placeholder {
