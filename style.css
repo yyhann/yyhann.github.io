@@ -548,6 +548,41 @@ nav a {
   gap: 10px;
 }
 
+.project-visual-block {
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.extension-image {
+  width: 100%;
+  height: 190px;
+  object-fit: contain;
+  display: block;
+  background: #ffffff;
+  padding: 8px;
+}
+
+.visual-caption {
+  padding: 10px 12px 12px;
+  border-top: 1px solid #eef2f7;
+}
+
+.visual-caption strong {
+  display: block;
+  margin-bottom: 3px;
+  color: #111;
+  font-size: 13px;
+}
+
+.visual-caption span {
+  display: block;
+  color: #777;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
 
 /* Temporary image placeholders */
 .image-placeholder {
