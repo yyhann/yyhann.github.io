@@ -539,7 +539,7 @@ nav a {
 .visual-pair {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
+  gap: 12px;
 }
 
 .visual-triple {
@@ -549,15 +549,19 @@ nav a {
 }
 
 .project-visual-block {
+  min-width: 0;
   overflow: hidden;
   border: 1px solid #e5e7eb;
   border-radius: 12px;
   background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .extension-image {
   width: 100%;
-  height: 190px;
+  height: 220px;
   object-fit: contain;
   display: block;
   background: #ffffff;
@@ -567,6 +571,7 @@ nav a {
 .visual-caption {
   padding: 10px 12px 12px;
   border-top: 1px solid #eef2f7;
+  flex: 1;
 }
 
 .visual-caption strong {
@@ -574,6 +579,7 @@ nav a {
   margin-bottom: 3px;
   color: #111;
   font-size: 13px;
+  line-height: 1.35;
 }
 
 .visual-caption span {
@@ -625,7 +631,6 @@ nav a {
 
   color: #94a3b8;
 }
-
 
 /* Engineering outcome */
 .extension-note {
