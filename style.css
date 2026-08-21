@@ -613,14 +613,14 @@ nav a {
 .snr-preview-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 310px));
-  gap: 16px;
+  gap: 18px;
   margin-top: 16px;
   justify-content: start;
 }
 
 .snr-preview-item {
-  min-width: 0;
   width: 100%;
+  min-width: 0;
 }
 
 .snr-preview-image {
@@ -715,9 +715,9 @@ nav a {
 }
 
 .software-extension-card {
-  grid-column: 1 / -1;
+  width: 100%;
+  min-width: 0;
 }
-
 
 /* Extensions below antenna / haptics */
 .single-extension {
@@ -1039,12 +1039,6 @@ nav a {
   height: 520px;
 }
 }
-
-  .software-extension-card {
-    width: 100%;
-    min-width: 0;
-    grid-column: 1;
-  }
 
   .software-extension-item {
     width: 100%;
