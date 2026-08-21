@@ -612,13 +612,15 @@ nav a {
 /* Compact SNR tool preview */
 .snr-preview-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 310px));
+  gap: 18px;
   margin-top: 16px;
   width: 100%;
+  justify-content: start;
 }
 
 .snr-preview-item {
+  width: 100%;
   min-width: 0;
 }
 
@@ -637,6 +639,7 @@ nav a {
 .snr-preview-item span {
   display: block;
   margin-top: 6px;
+
   color: #777;
   font-size: 11px;
   line-height: 1.3;
@@ -685,6 +688,7 @@ nav a {
   color: #94a3b8;
 }
 
+
 /* Engineering outcome */
 .extension-note {
   margin: 14px 0 0 !important;
@@ -696,7 +700,11 @@ nav a {
   font-size: 13px !important;
 }
 
+
+/* Software-enabled engineering extensions */
 .software-extension-item {
+  width: 100%;
+  min-width: 0;
   padding: 4px 0 18px;
 }
 
@@ -717,6 +725,7 @@ nav a {
   width: 100%;
   min-width: 0;
 }
+
 
 /* Extensions below antenna / haptics */
 .single-extension {
@@ -749,6 +758,7 @@ nav a {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 
 @media (max-width: 850px) {
   .projects-heading {
@@ -784,6 +794,7 @@ nav a {
   }
 }
 
+
 @media (max-width: 620px) {
   .project-area {
     padding: 18px;
@@ -806,7 +817,33 @@ nav a {
   .workflow-arrow {
     display: none;
   }
+
+  /* Software card on mobile */
+  .software-extension-item {
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* SNR screenshots: stacked vertically on mobile */
+  .snr-preview-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    width: 100%;
+  }
+
+  .snr-preview-item {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .snr-preview-image {
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+    object-fit: contain;
+  }
 }
+
 
 /* Publications */
 .publication-list {
@@ -840,7 +877,8 @@ nav a {
   margin-top: 6px;
 }
 
-/* Responsive */
+
+/* General responsive layout */
 @media (max-width: 850px) {
   .nav-inner {
     align-items: flex-start;
@@ -871,22 +909,23 @@ nav a {
   }
 
   .education-item {
-  flex-direction: column;
-  align-items: flex-start;
-}
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
   .education-left {
-  align-items: flex-start;
+    align-items: flex-start;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image {
+    height: 220px;
+  }
 }
 
-.project-grid {
-  grid-template-columns: 1fr;
-}
-
-.project-image {
-  height: 220px;
-}
-}
 
 /* Beyond Research page */
 .beyond-page {
@@ -1001,6 +1040,7 @@ nav a {
   margin: 0;
 }
 
+
 @media (max-width: 850px) {
   .beyond-page {
     padding: 52px 22px 64px;
@@ -1030,25 +1070,11 @@ nav a {
   }
 
   .activity-card.portrait-feature {
-  grid-column: span 1;
-  grid-template-columns: 1fr;
-}
-
-.activity-card.portrait-feature img {
-  height: 520px;
-}
-}
-
-  .software-extension-item {
-    width: 100%;
-    min-width: 0;
-  }
-
-  .snr-preview-grid {
+    grid-column: span 1;
     grid-template-columns: 1fr;
   }
 
-  .snr-preview-image {
-    height: auto;
-    max-height: 220px;
+  .activity-card.portrait-feature img {
+    height: 520px;
   }
+}
