@@ -310,7 +310,7 @@ nav a {
   border-radius: 999px;
   background: #eff6ff;
   color: #2563eb;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 800;
   letter-spacing: 0.06em;
 }
@@ -589,6 +589,16 @@ nav a {
   line-height: 1.4;
 }
 
+.extension-card h4 a {
+  color: #111;
+  text-decoration: none;
+}
+
+.extension-card h4 a:hover {
+  color: #111;
+  text-decoration: underline;
+}
+
 
 /* Temporary image placeholders */
 .image-placeholder {
@@ -641,6 +651,23 @@ nav a {
 
   color: #555;
   font-size: 13px !important;
+}
+
+.software-extension-item {
+  padding: 4px 0 18px;
+}
+
+.software-extension-item + .software-extension-item {
+  padding-top: 18px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.software-extension-item:last-child {
+  padding-bottom: 0;
+}
+
+.software-extension-item h4 {
+  margin-bottom: 8px;
 }
 
 
